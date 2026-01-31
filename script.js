@@ -31,5 +31,8 @@ document.getElementById('akan-form').addEventListener('submit', function(event){
         male : ['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame']
         female:['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'];
     }
+    const akanName = (gender === 'male') ? names.male[dayOfWeekIndex] : names.female[dayOfWeekIndex];
 
+
+    
     }
