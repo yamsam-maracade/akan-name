@@ -33,3 +33,8 @@ button{
 button:hover{
     background-color: red;
 }
+#result{
+    margin: 20px;
+    font-size: large;
+    text-align: center;
+}
