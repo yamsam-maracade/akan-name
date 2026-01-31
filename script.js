@@ -9,5 +9,5 @@ document.getElementById('akan-form').addEventListener('submit', function(event){
         alert('Please enter a valid date.');
         return;
     }
-    
+    const day = birthdate.getDate(;)
     }
