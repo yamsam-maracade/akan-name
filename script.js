@@ -20,4 +20,12 @@ document.getElementById('akan-form').addEventListener('submit', function(event){
         return
     }
 
+    const dayOfWeekIndex = (day + 
+        Math.floor((13 * (month + 1)) / 5) +
+        yy +
+        Math.floor(yy / 4) +
+        Math.floor(cc / 4) +
+        (2 * cc)) % 7;
+    )
+
     }
