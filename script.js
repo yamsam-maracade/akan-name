@@ -26,6 +26,10 @@ document.getElementById('akan-form').addEventListener('submit', function(event){
         Math.floor(yy / 4) +
         Math.floor(cc / 4) +
         (2 * cc)) % 7;
-    )
+
+    const names = {
+        male : ['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame']
+        female:['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'];
+    }
 
     }
