@@ -1,10 +1,13 @@
-document.getElementById('akan-form').addEventListener('submit', function(event){
+document.getElementById('akan-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
     const birthdateInput= document.getElementById('birthdate').value;
     const gender = document.getElementById('gender').value;
-    const birthdate = new Date('birthdateInput');
 
+    console.log('birthdate input', birthdateInput);
+
+    const birthdate = new Date(birthdateInput);
+//validate day and month
     if(!birthdate || isNaN(birthdate.getTime())) {
         alert('Please enter a valid date.');
         return;
@@ -14,7 +17,7 @@ document.getElementById('akan-form').addEventListener('submit', function(event){
     const year = birthdate.getFullYear();
     const cc = Math.floor(year / 100);
     const yy = year % 100; 
-
+//Calculate day of the week
     if (day < 1 || day > 31 || month < 1 || month > 12){
         alert("please enter a valid day (1-31) and month (1-12). ");
         return
@@ -26,13 +29,13 @@ document.getElementById('akan-form').addEventListener('submit', function(event){
         Math.floor(yy / 4) +
         Math.floor(cc / 4) +
         (2 * cc)) % 7;
-
+//Get akan name
     const names = {
         male : ['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame'],
         female : ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'] 
     }
     const akanName = (gender === 'male') ? names.male[dayOfWeekIndex] : names.female[dayOfWeekIndex];
 
-    document.getElementById('result').innerText = 'Your Akan name is: ${akanName}!';
+    document.getElementById('result').innerText = 'Your Akan name is: !';
 
     });
