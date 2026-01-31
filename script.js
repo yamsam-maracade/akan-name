@@ -28,8 +28,8 @@ document.getElementById('akan-form').addEventListener('submit', function(event){
         (2 * cc)) % 7;
 
     const names = {
-        male : ['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame']
-        female : ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama']
+        male : ['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame'],
+        female : ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'] 
     }
     const akanName = (gender === 'male') ? names.male[dayOfWeekIndex] : names.female[dayOfWeekIndex];
 
