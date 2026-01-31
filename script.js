@@ -29,10 +29,10 @@ document.getElementById('akan-form').addEventListener('submit', function(event){
 
     const names = {
         male : ['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame']
-        female:['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'];
+        female : ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama']
     }
     const akanName = (gender === 'male') ? names.male[dayOfWeekIndex] : names.female[dayOfWeekIndex];
 
+    document.getElementById('result').innerText = 'Your Akan name is: ${akanName}!';
 
-    
-    }
+    });
