@@ -12,6 +12,6 @@ document.getElementById('akan-form').addEventListener('submit', function(event){
     const day = birthdate.getDate();
     const month = birthdate.getMonth() + 1
     const year = birthdate.getFullYear();
-    
+    const cc = Math.floor(year / 100);
 
     }
