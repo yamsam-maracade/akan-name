@@ -15,4 +15,9 @@ document.getElementById('akan-form').addEventListener('submit', function(event){
     const cc = Math.floor(year / 100);
     const yy = year % 100; 
 
+    if (day < 1 || day > 31 || month < 1 || month > 12){
+        alert("please enter a valid day (1-31) and month (1-12). ");
+        return
+    }
+
     }
