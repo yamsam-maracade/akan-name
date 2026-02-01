@@ -36,6 +36,6 @@ document.getElementById('akan-form').addEventListener('submit', function(event) 
     }
     const akanName = (gender === 'male') ? names.male[dayOfWeekIndex] : names.female[dayOfWeekIndex];
 
-    document.getElementById('result').innerText = 'Your Akan name is: !';
-
-    });
+    console.log(`Your Akan name is:  ${akanName}\n`);
+    document.getElementById('result').innerText = `Your Akan name is: ${akanName}`;
+});
