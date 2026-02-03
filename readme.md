@@ -4,7 +4,7 @@
 The Akan Name Generator is a web application that allows users to discover their Akan name based on their dates of birth and their gender. This tool follows the Akan tradition where names are assigned according to the day of the week a person is born.
 
 ## Author
-- YAMSAM MARACADE  (https://github.com/yamsam-maracade/akan-name)
+- YUSSUF ABDIRIZAK (YAMSAM MARACADE)
 
 ## Setup Instructions
 1. Clone the repository to your local machine:
