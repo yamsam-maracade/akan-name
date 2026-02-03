@@ -7,7 +7,7 @@ document.getElementById('akan-form').addEventListener('submit', function(event) 
     console.log('birthdate input', birthdateInput);
 
     const birthdate = new Date(birthdateInput);
-//validate day and month
+
     if(!birthdate || isNaN(birthdate.getTime())) {
         alert('Please enter a valid date.');
         return;
@@ -30,7 +30,7 @@ document.getElementById('akan-form').addEventListener('submit', function(event) 
         Math.floor(cc / 4) +
         (2 * cc)) % 7;
 
-        
+
     const names = {
         male : ['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame'],
         female : ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'] 
