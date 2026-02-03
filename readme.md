@@ -23,3 +23,6 @@ The Akan Name Generator is a web application that allows users to discover their
 For inquiries, please contact:
 - YUSSUF ABDIRIZAK: yamsammaracade50@gmail.com
 - Github link: https://github.com/yamsam-maracade
+
+## Licence
+- This project is licenced under the MIT licence
